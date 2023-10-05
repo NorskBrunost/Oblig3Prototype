@@ -29,9 +29,9 @@ nav{
 }
 .main-text {
     margin-left: 5%;
+    margin-right: 5%;
     padding: 2.5%;
-    max-width: 1200px;
-    background-color: rgb(87, 212, 38);
+    background-color: rgb(186, 255, 158);
 }
 p, ul, li {
     max-width: 700px;
