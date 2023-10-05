@@ -27,3 +27,12 @@ nav{
     background-color: white;
     color:#3a3a3a;
 }
+.main-text {
+    margin-left: 5%;
+    padding: 2.5%;
+    max-width: 1200px;
+    background-color: rgb(87, 212, 38);
+}
+p, ul, li {
+    max-width: 700px;
+}
