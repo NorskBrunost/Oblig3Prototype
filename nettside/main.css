@@ -1,0 +1,29 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rems;
+    max-width: 100%;
+}
+nav{
+    background-color: #3a3a3a;
+    padding: 15px;
+
+}
+
+
+.nav-text {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+.nav-text:hover {
+    background-color: white;
+    color:#3a3a3a;
+}
+
+.nav-text-active {
+    background-color: white;
+    color:#3a3a3a;
+}
