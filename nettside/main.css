@@ -42,3 +42,33 @@ margin-right: 5px;
 float: right;
 margin-top: 5px;
 }
+
+
+
+
+
+
+
+/*Temporær, så man kan flytte og style elementet i !!aboutAI.html!!*/
+div.aiDemoDiv{
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.aiDemoDiv h1{
+    display: inline-block;
+}
+
+div.aiDemoDiv iframe{
+    display: inline-block;
+    width: 600px;
+    height: 480px;
+    padding: 0;
+}
+
+div.aiDemoDiv p{
+    display: inline-block;
+}
