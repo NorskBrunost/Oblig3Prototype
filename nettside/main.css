@@ -93,11 +93,55 @@ nav{
 }
 
 div.main-text {
+    /*2x5 subgrid*/
     grid-column: span 2;
     grid-row: span 1;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}   
+
+div.main-text section.page-banner {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: red;
 }
+
+/*
+2X2 grid Dedikert til home.html
+Mål: få hver andre seksjon til å vise omvendt rekkefølge på egne elementer
+Antar: KUN 2 elementer i hver seksjon.
+
+ALLE BAKGRUNNSFARGER ER KUN FOR VISUALISERING: FJERN TIL INNLEVERING ELLER OM VI ENDRER DESIGNSTIL
+Anbefaler å lese home.html i splittet vindu med main.css.
+*/
+div.main-text section:not(.page-banner){
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: aqua; /*Fjern når ferdig, kun til å visualisere griden*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display:    inline-flex;  /*Flex tillater å endre på under-elementers rekkefølge på en enkel måte*/
+}
+
+/*Hvert andre underelement skriver sine underelementer i motsatt rekkefølge.*/
+div.main-text section:not(.page-banner):nth-child(even){
+    flex-direction: row-reverse;
+}
+
+div.main-text section:not(.page-banner) > div{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+div.main-text section:not(.page-banner) > *:not(div){
+    grid-column: span 1;
+    grid-row: span 2; 
+    background-color: coral;  
+}
+
 
 footer {
     grid-column: span 2;
     grid-row: span 1;
 }
+/*Kode dedikert til home.html slutt*/
