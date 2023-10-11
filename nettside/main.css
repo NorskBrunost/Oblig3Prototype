@@ -74,11 +74,14 @@ div.aiDemoDiv p{
 }
 
 /*
-Forslag for generelt grid-format for alle sidene
-2 X 3 grid
-Header
-Main
-Footer
+Forslag for generelt grid-format for ALLE sidene
+Body er 2 X 3 grid
+
+
+Inni body er:
+Header 2x1 (2fr x 2.5em)
+div.main-text 2x1(2fr x 1fr)
+Footer 2x1 (2fr x 7em)
 
 MERK: Må designe om noen av elementene i hver sone
 */
@@ -101,22 +104,23 @@ footer {
 }
 
 div.main-text {
-    /*2x5 subgrid*/
-    grid-column: span 2;
+    /*Fyller 2 x 1 av gridet I BODY.*/
+    grid-column: span 2; 
     grid-row: span 1;
-    
+    /*2x4 subgrid inni div.main-text*/
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }   
 
 div.main-text section.page-banner {
+    /*Seksjoner med klassen page-banner fyller 2 x 1 av gridet I div.main-text.*/
     grid-column: span 2;
     grid-row: span 1;
     background-color: red;
 }
 
 /*
-2X2 grid Dedikert til home.html
+Hver seksjon er 2X2 grid dedikert til home.html
 Mål: få hver andre seksjon til å vise omvendt rekkefølge på egne elementer
 Antar: KUN 2 elementer i hver seksjon.
 
@@ -124,6 +128,7 @@ ALLE BAKGRUNNSFARGER ER KUN FOR VISUALISERING: FJERN TIL INNLEVERING ELLER OM VI
 Anbefaler å lese home.html i splittet vindu med main.css.
 */
 div.main-text section:not(.page-banner){
+    /*ALLE seksjoner som IKKE har klassen page-banner fyller 2 x 1 av gridet i div.main-text.*/
     grid-column: span 2;
     grid-row: span 1;
     background-color: aqua; /*Fjern når ferdig, kun til å visualisere griden*/
@@ -147,13 +152,41 @@ div.main-text section:not(.page-banner) > *:not(div){
     background-color: coral;  
 }
 
-
-
 /*Kode dedikert til home.html slutt*/
 
+/*
+!!Kode for aboutApp.html!!
+*/
+
+div.main-text#aboutApp{
+    background-color: grey;
+    display: flex;
+}
+div.main-text#aboutApp > *{
+    flex: 0 0 content;
+}
+div.main-text div.about-app-text{
+    width: 700px;
+}
+div.main-text div.about-app-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+div.main-text div.about-app-images img{
+    width: 20%;
+    height: 40% ;
+    
+}
 
 
 
+
+
+/*
+!!Kode for aboutApp.html slutt!!
+*/
 
 
 
