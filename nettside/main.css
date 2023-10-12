@@ -1,3 +1,6 @@
+/*
+Generelle regler for all sider 
+*/
 html, body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
@@ -37,41 +40,16 @@ nav{
 p, ul, li {
     max-width: 700px;
 }
-img {
-margin-right: 5px;
-float: right;
-margin-top: 5px;
+img {}
+
+footer{
+    background-color: #3a3a3a;
+    color: white;
+}
+a:link{
+    color: green;
 }
 
-
-
-
-
-
-
-/*Temporær, så man kan flytte og style elementet i !!aboutAI.html!!*/
-div.aiDemoDiv{
-    display: flex;
-    background-color: grey;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-div.aiDemoDiv h1{
-    display: inline-block;
-}
-
-div.aiDemoDiv iframe{
-    
-    width: 600px;
-    height: 480px;
-    
-}
-
-div.aiDemoDiv p{
-    display: inline-block;
-}
 
 /*
 Forslag for generelt grid-format for ALLE sidene
@@ -112,11 +90,33 @@ div.main-text {
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }   
 
+
+/*
+Generelle regler for all sider slutt
+*/
+
+
+
+
+/*
+Kode spesifikk til home.html.
+*/
 div.main-text section.page-banner {
     /*Seksjoner med klassen page-banner fyller 2 x 1 av gridet I div.main-text.*/
     grid-column: span 2;
     grid-row: span 1;
-    background-color: red;
+    display: flex;
+    background: linear-gradient(#4BA660 55%,#BAFF9E);
+    justify-content: center;
+    margin-top: -2.5%;
+    margin-right: -2.8%;
+    margin-left: -2.8%;
+    
+    margin-bottom: 2em;
+
+    /*
+    Fra: https://stackoverflow.com/questions/2717127/how-to-do-gradient-borders-in-css
+    */
 }
 
 /*
@@ -131,10 +131,11 @@ div.main-text section:not(.page-banner){
     /*ALLE seksjoner som IKKE har klassen page-banner fyller 2 x 1 av gridet i div.main-text.*/
     grid-column: span 2;
     grid-row: span 1;
-    background-color: aqua; /*Fjern når ferdig, kun til å visualisere griden*/
+    /*background-color: aqua; Fjern når ferdig, kun til å visualisere griden*/
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    display:    inline-flex;  /*Flex tillater å endre på under-elementers rekkefølge på en enkel måte*/
+    display:    flex;  /*Flex tillater å endre på under-elementers rekkefølge på en enkel måte*/
+    justify-content: center;
 }
 
 /*Hvert andre underelement skriver sine underelementer i motsatt rekkefølge.*/
@@ -149,41 +150,46 @@ div.main-text section:not(.page-banner) > div{
 div.main-text section:not(.page-banner) > *:not(div){
     grid-column: span 1;
     grid-row: span 2; 
-    background-color: coral;  
+    /*background-color: coral;*/
 }
 
+div.main-text section:not(.page-banner) > img#brand{
+    margin-right: 5px;
+    float: right;
+    margin-top: 5px;
+}
 /*Kode dedikert til home.html slutt*/
+
+
+
 
 /*
 !!Kode for aboutApp.html!!
 */
-
 div.main-text#aboutApp{
+    grid-column: span 2;
+    grid-row: span 1;
     background-color: grey;
     display: flex;
 }
-div.main-text#aboutApp > *{
-    flex: 0 0 content;
+
+div.main-text#aboutApp div.about-app-text{
+    flex: 1;
 }
-div.main-text div.about-app-text{
-    width: 700px;
-}
-div.main-text div.about-app-images{
+
+div.main-text#aboutApp div.about-app-images{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    flex: 1;
 }
-div.main-text div.about-app-images img{
-    width: 20%;
-    height: 40% ;
-    
+div.main-text#aboutApp div.about-app-images img{
+    width: 50%;
+    height: 80% ;
+    padding: 0%;
+    margin: 0%;
 }
-
-
-
-
-
 /*
 !!Kode for aboutApp.html slutt!!
 */
@@ -192,197 +198,75 @@ div.main-text div.about-app-images img{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
-    background-color: #3a3a3a;
-    color: white;
+/*
+!!kode spesifikk til aboutUs
+*/
+div.main-text#aboutUs{
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: darkolivegreen;
 }
-a:link{
-    color: green;
+
+div.main-text#aboutUs > div#aboutUsBanner{
+    margin-bottom: 7%;
 }
+
+div.main-text#aboutUs > div:not(#aboutUsBanner){
+    display: flex;
+    justify-content: space-between;     
+}
+
+div.main-text#aboutUs > div:not(#aboutUsBanner) > div{
+    border-radius: 20px;
+    border: red solid 3px;
+    margin: 4px;
+    padding: 4px;
+}
+/*
+!!Kode spesifikk til aboutUs slutt
+*/
+
+
+
+
+/*Kode spesifikk til aboutAI*/
+div.aiDemoDiv{
+    display: flex;
+    background-color: grey;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.aiDemoDiv h1{
+    display: inline-block;
+}
+
+div.aiDemoDiv img{
+    
+    
+}
+
+div.aiDemoDiv p{
+    display: inline-block;
+}
+/*
+!!Kode for aboutAi slutt
+*/
+
+
+
+
+/*
+!!Kode spesifikk til ContactUs
+*/
+
+/*Temporær css for å sentrere bildet som representerer senere design*/
+div.main-text#contactUs{
+    display: flex;
+    justify-content: center;
+}
+
+/*
+!!Kode spesifikk til ContactUs slutt
+*/
