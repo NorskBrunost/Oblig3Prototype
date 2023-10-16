@@ -45,7 +45,9 @@ img {}
 footer{
     background-color: #3a3a3a;
     color: white;
+    padding-left: 15px;
 }
+
 a:link{
     color: green;
 }
