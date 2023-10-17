@@ -35,6 +35,7 @@ nav{
     margin-left: 0%;
     margin-right: 0%;
     padding: 2.5%;
+    margin-bottom: 0;
     background-color: rgb(186, 255, 158);
 }
 p, ul, li {
@@ -45,9 +46,11 @@ img {}
 footer{
     background-color: #3a3a3a;
     color: white;
-    padding-left: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: 2.5%;
 }
-
 a:link{
     color: green;
 }
@@ -206,7 +209,7 @@ div.main-text#aboutApp div.about-app-images img{
 div.main-text#aboutUs{
     grid-column: span 2;
     grid-row: span 1;
-    background-color: darkolivegreen;
+    background-color: grey;
 }
 
 div.main-text#aboutUs > div#aboutUsBanner{
