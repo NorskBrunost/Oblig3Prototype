@@ -50,7 +50,8 @@ footer{
     width: 100%;
     bottom: 0;
     margin-top: 2.5%;
-    height: 13.5%;
+    height: 120px;
+    padding-left: 2.5%;
 }
 a:link{
     color: green;
