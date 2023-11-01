@@ -37,7 +37,7 @@ footer{
     width: 100%;
     bottom: 0;
     margin-top: 2.5%;
-    height: 120px;
+    height: 80px;
     padding-left: 2.5%;
 }
 
@@ -58,11 +58,62 @@ footer{
     margin: 10%;
     font-size: 30px;
 }
-img{
+.img{
 height: 70%;
 width: 100%;
 }
-h1{
+/*
+.banner{
+    display: inline-flex;
+}
+*/
+.banner > img{
+    
+}
+
+.banner >  h1{
     text-align: center;
     font-size: 70px;
+    padding: 0%;
+    padding-top: 5%;
+    margin: 0%;
+}
+
+
+
+#contactForm > form{
+    padding: 0.2em;
+}
+
+#contactForm > form {
+    background-color: #D8D8D8;
+    border-radius: 0.2em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 1fr) 4fr 1fr;   
+}
+
+
+#contactForm > form #fname, #email {
+    grid-column: span 1;
+    margin: 0.35em;
+    
+     + #topic{ /*+ for eneste påfølgende boks med gitt id*/
+        grid-column: span 2;
+        margin: 0.35em;
+    }
+}
+
+#contactForm > form #message{ /*Fungerer ikke for zoom, ser inn i det.*/
+    margin-top: 1em;
+    grid-column: span 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    resize: vertical;
+}
+
+#contactForm > form input[type="submit"]{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    
 }
