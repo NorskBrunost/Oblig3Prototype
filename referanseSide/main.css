@@ -2,7 +2,7 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
-    font-size: 1rem;
+    font-size: 1rem; /*rem 	Relative to font-size of the root element, muligvis bedre å sette en pikselverdi her av den grunn.*/
     max-width: 100%;
 }
 
@@ -39,6 +39,7 @@ footer{
     margin-top: 2.5%;
     height: 80px;
     padding-left: 2.5%;
+    padding-bottom: 0.5%;
 }
 
 .grid{
@@ -79,11 +80,34 @@ width: 100%;
     margin: 0%;
 }
 
-
-
-#contactForm > form{
-    padding: 0.2em;
+#faq div.dropdowns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
+#faq div.dropdowns div{
+    padding: 0.2em;
+    margin: 0.2em;
+    background-color: #E8E6E3;
+}
+
+.faq-dropdown{
+    height: 0px;
+    overflow: hidden;
+}
+
+.drop-toggle:checked ~ p.faq-dropdown {
+    height: auto;
+    width: fit-content;
+    display: block;
+    overflow: visible;
+    background-color: maroon;
+    margin: 0;
+    padding: 0;
+}
+
+#contactForm > form{padding: 0.2em;}
 
 #contactForm > form {
     background-color: #D8D8D8;
