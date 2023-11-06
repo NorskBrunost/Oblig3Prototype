@@ -145,6 +145,7 @@ width: 100%;
 
 #about-app-text {
     grid-column: span 1;
+    margin-top: 0.5em;
 }
 
 @keyframes fadeIn {
