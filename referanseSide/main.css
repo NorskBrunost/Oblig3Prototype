@@ -52,7 +52,7 @@ footer h3 {
     display: grid;
     gap: 0px;
     grid-template-columns: 50% auto;
-    grid-template-rows: auto;
+    grid-template-rows: 13% 13% 13% 13% 13% 13%;
     margin: 0%;
     padding: 0%;
 }
@@ -68,9 +68,9 @@ footer h3 {
     line-height: 1.5;
 }
 .img{
-margin: 12%;
-height: 60%;
-width: 70%;
+margin: 10%;
+height: 80%;
+width: 80%;
 }
 /*
 .banner{
