@@ -38,10 +38,31 @@ footer{
     position: fixed;
     width: 100%;
     bottom: 0;
-    margin-top: 2.5%;
-    height: 80px;
-    padding-left: 2.5%;
-    padding-bottom: 0.5%;
+    padding-left: 10%;
+    height: 5vh;
+    padding-bottom: 10vh;
+    
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr,);
+    grid-template-rows: 1fr;
+}
+
+#footer-contact-us{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#footer-newsletter{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+    
+a{
+    color: #5AA779;
+}
+a:hover{
+    color: #97a59d;
 }
 
 footer h3 {
@@ -194,6 +215,24 @@ div.grid div {
 
 #about-app-images img {
 
+}
+
+
+/*Kode for about.ai*/
+
+#about-ai.grid-text{
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+#figma-container{
+    padding: 0;
+    background-color: black;
+}
+
+#figma-demo {
+    height: 75rem;
+    width: 50rem;
 }
 
 
