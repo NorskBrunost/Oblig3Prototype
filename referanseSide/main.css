@@ -221,19 +221,33 @@ div.grid div {
 
 /*Kode for about.ai*/
 
+#ai{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
+
 #about-ai.grid-text{
     margin: 0;
     margin-bottom: 10%;
+    height: inherit;
+    width: inherit;
+    
 }
 
 #figma-container{
     padding: 0;
     background-color: black;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+
 }
 
 #figma-demo {
-    height: 75rem;
-    width: 50rem;
+    height: 100%;
+    width: 100%;
 }
 
 
