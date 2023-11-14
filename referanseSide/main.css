@@ -110,18 +110,50 @@ width: 80%;
     margin: 0%;
 }
 
+#main-page-b_roll{
+    position: static;
+    display: block;
+    width: 100%;
+    background-color: #5AA779;
+}
+
+#main-page{
+    width: 100%;
+    background-image: url("../bilder/upscaled/bRollRoyaltyFree.mp4");
+}
+
+#main-page div{
+    height: min-content;
+}
+
+#main-page img {
+    height: 80%;
+    width: 80%;
+}
+
+#main-page :last-child {
+    margin-bottom: 1em;
+}
+
+
+#faq{
+    height: 100vh;
+}
+
 #faq div.dropdowns{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    height: 50vh;
+    
 }
 
 #faq div.dropdowns div{
-    padding: 0.2em;
     margin: 0.2em;
     background-color: #E8E6E3;
     border-radius: 5px;
 }
+
 
 .faq-dropdown{
     height: 0px;
@@ -152,7 +184,14 @@ div.grid div {
     background-color: aqua;
 }
  
-#contactForm > form{padding: 0.2em;}
+#contactForm {
+    height: 75vh;
+}
+
+#contactForm > form{
+    padding: 0.2em;
+    height: 50rem;
+}
 
 #contactForm > form {
     background-color: #D8D8D8;
@@ -162,12 +201,13 @@ div.grid div {
     grid-template-rows: repeat(2, 1fr) 4fr 1fr;   
 }
 
-
-
+form > #fname, #email, #topic {
+    height: 1rem;
+}
 
 #contactForm > form #fname, #email {
     grid-column: span 1;
-    margin: 0.35em;
+    margin: 0.35em 0.35em 0.35em 0.35em;
     
      + #topic{ /*+ for eneste påfølgende boks med gitt id*/
         grid-column: span 2;
@@ -189,9 +229,16 @@ div.grid div {
     
 }
 
+#about-app{
+    height: fit-content;
+    width: 100%;
+    background-color: #5AA779
+}
+
 #about-app-text {
     grid-column: span 1;
-    margin-top: 2em;
+    margin-top: 2rem;
+    height: inherit;
 }
 
 @keyframes fadeIn {
@@ -202,14 +249,15 @@ div.grid div {
 
 #about-app-images {
     grid-column: span 1;
-    padding-top: 8%;
-    block-size: 100vh;
+    padding-top: 10%;
+    margin-top: 5%;
     display: inline-flex;
     flex-direction: row;
-    justify-content: center;
     position: sticky;
+    justify-content: center;
     top: 0;
-
+    height: 35rem;
+    width: 50rem;
     animation: fadeIn 3s;
 
 }
