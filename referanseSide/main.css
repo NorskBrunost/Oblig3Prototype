@@ -137,14 +137,14 @@ width: 80%;
 
 
 #faq{
-    height: 100vh;
+    height: inherit;
 }
 
 #faq div.dropdowns{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 50vh;
+    height: auto;
     
 }
 
