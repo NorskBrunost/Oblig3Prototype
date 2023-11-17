@@ -120,7 +120,6 @@ width: 80%;
 
 #main-page{
     width: 100%;
-    background-image: url("../bilder/upscaled/bRollRoyaltyFree.mp4");
 }
 
 #main-page div{
@@ -128,12 +127,12 @@ width: 80%;
 }
 
 #main-page img {
-    height: 80%;
-    width: 80%;
+    height: 25rem;
+    width: 25rem;
 }
 
 #main-page :last-child {
-    margin-bottom: 1em;
+    margin-bottom: 5rem;
 }
 
 
@@ -262,7 +261,8 @@ form > #fname, #email, #topic {
 }
 
 #about-app-images img {
-
+    height: inherit;
+    width: inherit;
 }
 
 
