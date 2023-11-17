@@ -93,7 +93,6 @@ footer h3 {
 margin: 10%;
 height: 80%;
 width: 80%;
-margin-bottom: 5%;
 }
 /*
 .banner{
@@ -121,6 +120,7 @@ margin-bottom: 5%;
 
 #main-page{
     width: 100%;
+    background-image: url("../bilder/upscaled/bRollRoyaltyFree.mp4");
 }
 
 #main-page div{
@@ -128,12 +128,12 @@ margin-bottom: 5%;
 }
 
 #main-page img {
-    height: 25rem;
-    width: 25rem;
+    height: 80%;
+    width: 80%;
 }
 
 #main-page :last-child {
-    margin-bottom: 5rem;
+    margin-bottom: 1em;
 }
 
 
@@ -262,8 +262,7 @@ form > #fname, #email, #topic {
 }
 
 #about-app-images img {
-    height: inherit;
-    width: inherit;
+
 }
 
 
